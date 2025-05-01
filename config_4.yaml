@@ -1,0 +1,10 @@
+TRAINING:
+  estimateMissingObjects: false
+  highestQuantisationBinCentre: 0.1
+  lossType: crossEntropy
+  lowestQuantisationBinCentre: 0.001
+  numberOfQuantisationBins: 6
+  predictionQuantity: finalDisplacement
+  predictionScale: scene
+  useGradientPenalty: true
+name: crossEntropy_scene_presentOnly

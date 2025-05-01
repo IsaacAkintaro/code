@@ -1,0 +1,42 @@
+DATA:
+  maximumSceneSize: 13
+  voxelBinningPower: 1
+  voxelEmbeddingType: surfaceVoxelEmbedding
+  trainingFirstSceneNumber: 1
+  trainingLastSceneNumber: 800
+  validationFirstSceneNumber: 801
+  validationLastSceneNumber: 900
+  testingFirstSceneNumber: 901
+  testingLastSceneNumber: 1000
+NETWORK:
+  downscalingChannelScaling: 2.0
+  initialProjectionDimension: 128
+  injectCoordinateInput: false
+  kernelSize: 3
+  numberOfIntermediateComputationLayers: 0
+  residualMode: residual
+  useBatchNorm: false
+  useBiasThroughout: false
+  useDSConvolutions: false
+  useSpectralNorm: false
+SYSTEM:
+  cudnnBenchmarking: true
+  disableCuDNN: false
+  numberOfWorkers: 12
+  type: bear
+TRAINING:
+  batchSize: 12
+  estimateMissingObjects: true
+  highestQuantisationBinCentre: 0.1
+  inputNoise: 0.1
+  learningRate: 0.0001
+  lossType: crossEntropy
+  lowestQuantisationBinCentre: 0.001
+  numberOfIterations: 50001
+  numberOfQuantisationBins: 6
+  predictionQuantity: finalDisplacement
+  predictionScale: object
+  predictionType: quantised
+  quantisationBinScaling: exponential
+  useGradientPenalty: true
+name: Default_configuration

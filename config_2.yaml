@@ -1,0 +1,10 @@
+TRAINING:
+  estimateMissingObjects: true
+  highestQuantisationBinCentre: 0.1
+  lossType: jsDivergence
+  lowestQuantisationBinCentre: 0.001
+  numberOfQuantisationBins: 6
+  predictionQuantity: finalDisplacement
+  predictionScale: scene
+  useGradientPenalty: true
+name: jsDivergence_scene_missing
